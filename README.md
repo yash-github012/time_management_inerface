@@ -127,8 +127,6 @@ Contributions are welcome! To contribute:
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under padekar shreyas,for use this project please send a mail on padekarshreyas@gmail.com
 
 ---
-
-This README template provides a clear summary of your project, including installation instructions, usage guidelines, and technical details. You can modify this to suit your project needs further.
