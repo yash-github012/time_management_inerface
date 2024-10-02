@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Focus</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For icons -->
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="brand">
+                <h1>STUDY FOCUS</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#" id="signUp">Sign Up</a>
+                <a href="#" id="logIn">Log In</a>
+                <a href="#" id="account">Account</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="timer-container">
+        <div class="header">
+            <h1>SOLO STUDY TRACKER</h1>
+        </div>
+        <div class="mode-buttons">
+            <button class="mode-btn active" id="pomodoro">Pomodoro</button>
+            <button class="mode-btn" id="shortBreak">Short Break</button>
+            <button class="mode-btn" id="longBreak">Long Break</button>
+        </div>
+        <div class="timer" id="timer">25:00</div>
+        <div class="controls">
+            <button class="control-btn" id="startBtn">Start</button>
+            <button class="control-btn" id="pauseBtn">Pause Session</button>
+            <button class="control-btn" id="completeBtn">Complete Session</button>
+            <button class="control-btn" id="resetBtn">Reset</button>
+            <button class="control-btn" id="settingsBtn"><i class="fas fa-cogs"></i> Settings</button>
+            <button class="control-btn" id="spotifyBtn"><i class="fas fa-music"></i> Spotify</button>
+        </div>
+        <div class="good-luck-message" id="goodLuckMessage"></div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settingsModal" class="modal">
+        <div class="modal-content settings-modal">
+            <span class="close" id="closeSettings">&times;</span>
+            <h2>Settings</h2>
+            <div class="settings-section">
+                <h3>History</h3>
+                <button id="historyBtn">View History</button>
+            </div>
+            <div class="settings-section">
+                <h3>Music</h3>
+                <button id="spotifyBtn">Open Spotify</button>
+            </div>
+            <div class="settings-section">
+                <h3>Calendar</h3>
+                <button id="calendarBtn">Open Calendar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- History Modal -->
+    <div id="historyModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeHistory">&times;</span>
+            <h2>Study Record History</h2>
+            <ul id="historyList"></ul>
+        </div>
+    </div>
+
+    <!-- Calendar Modal -->
+    <div id="calendarModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeCalendar">&times;</span>
+            <h2>Calendar</h2>
+            <div id="calendar"></div>
+            <div class="note-section">
+                <h3>Add Note</h3>
+                <input type="date" id="noteDate">
+                <textarea id="noteText" placeholder="Enter your note here..."></textarea>
+                <button id="saveNoteBtn">Save Note</button>
+                <ul id="noteList"></ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSignup">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <label for="signupName">Name:</label>
+                <input type="text" id="signupName" required>
+                <label for="signupEmail">Email:</label>
+                <input type="email" id="signupEmail" required>
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sign In Modal -->
+    <div id="signinModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeSignin">&times;</span>
+            <h2>Log In</h2>
+            <form id="signinForm">
+                <label for="signinEmail">Email:</label>
+                <input type="email" id="signinEmail" required>
+                <label for="signinPassword">Password:</label>
+                <input type="password" id="signinPassword" required>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

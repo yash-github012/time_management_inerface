@@ -1,0 +1,355 @@
+/* Set the background for the entire page */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bg.jpg');  /* Use the uploaded background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Top Navigation Bar */
+.navbar {
+    width: 100%;
+    padding: 10px 0;
+    position: absolute;
+    top: 0;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  
+}
+
+.brand h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background 1s ease;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ff5e5e;
+    color: rgb(27, 9, 71);
+}
+
+
+/* Styling the timer container */
+.timer-container {
+    background: linear-gradient(135deg, #1f1e50, #79266d);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    color: white;
+    max-width: 500px;
+    width: 90%;
+}
+
+/* Styling the header */
+.header h1 {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Styling the mode buttons (Pomodoro, Short Break, Long Break) */
+.mode-buttons {
+    margin: 20px 0;
+}
+
+.mode-btn {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.mode-btn.active {
+    background: white;
+    color: #1f1e50;
+}
+
+.mode-btn:hover {
+    background: white;
+    color: #1f1e50;
+}
+
+/* Styling the timer display */
+.timer {
+    font-size: 64px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Styling the control buttons */
+.controls {
+    margin-top: 20px;
+}
+
+.control-btn {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 1s ease;
+}
+
+.control-btn i {
+    margin-right: 5px;
+}
+
+.control-btn:hover {
+    background: #1f1e50;
+    color: white;
+}
+
+/* Good luck message */
+.good-luck-message {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Note section inside calendar modal */
+.note-section {
+    margin-top: 20px;
+}
+
+.note-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.note-section button {
+    background: #1f1e50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.note-section button:hover {
+    background: #ff5e5e;
+}
+
+.note-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.note-section ul li {
+    background: #1f1e50;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+/*model styling*/
+/* Modal styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Settings Modal Styling */
+.settings-modal {
+    padding: 20px;
+}
+
+.settings-modal h2 {
+    margin-top: 0;
+}
+
+.settings-modal button {
+    background: #1f1e50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.settings-modal button:hover {
+    background: #ff5e5e;
+}
+
+.settings-modal .settings-section {
+    margin: 20px 0;
+}
+
+.settings-section h3 {
+    margin: 10px 0;
+}
+
+.settings-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.settings-section ul li {
+    background: #1f1e50;
+    color: white;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+/*signup form*/
+#signupModal,
+#signinModal {
+    display: none;
+}
+
+#signupModal .modal-content,
+#signinModal .modal-content {
+    width: 60%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 5px 0;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .timer {
+        font-size: 48px;
+    }
+
+    .mode-btn, .control-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+}
