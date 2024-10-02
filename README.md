@@ -1,6 +1,3 @@
-Here’s a detailed **README** file for your **GitHub repository**:
-
----
 
 # Solo Study Tracker - Pomodoro Timer with Node.js Backend
 
